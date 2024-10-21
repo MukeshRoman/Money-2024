@@ -1,0 +1,224 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="774,1456.6666666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Filters</x:String>
+      <x:String>UiPath.GSuite.Activities.Filters</x:String>
+      <x:String>UiPath.GSuite.Gmail.Enums</x:String>
+      <x:String>UiPath.GSuite.Models</x:String>
+      <x:String>UiPath.Shared.Api.Google.Gmail.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Utilities</x:String>
+      <x:String>UiPath.Shared.Activities.Triggers</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Triggers</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="784,1392" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="FirstLetter" />
+      <Variable x:TypeArguments="x:Boolean" Name="BoolValue" />
+      <Variable x:TypeArguments="x:Int32" Name="IntValue" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="Output" />
+      <Variable x:TypeArguments="x:String" Name="Final" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Money20/20 USA" sap:VirtualizedContainerService.HintSize="722,1304" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="9dbc3d8c-dd79-472f-84cc-0c42fb5bf763" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="688,1062" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="626,971.3333333333334" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence sap:VirtualizedContainerService.HintSize="592,858.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,770.6666666666666" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="C:\Users\mukesh.c\OneDrive - zucisystems.com\Documents\RPA\Additional Effort\Money 2024.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence sap:VirtualizedContainerService.HintSize="496,467.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DelayBetweenPages="10" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Company'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='app-profile-card' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='app-profile-card' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='app-profile-card' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="434,192" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="9dbc3d8c-dd79-472f-84cc-0c42fb5bf763" Timeout="120" Version="V3">
+                              <uix:NExtractData.NextLink>
+                                <uix:TargetAnchorable BrowserURL="https://connect.money2020.com/money2020usa2024/app/home/network/list/82807?page=6&amp;sort=name" DesignTimeRectangle="848, 905, 104, 21" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Load more'" FullSelectorArgument="&lt;webctrl aaname=' Load more ' parentid='main-container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Load more ' parentid='main-container' tag='DIV' type='' class='button-text ng-star-inserted' check:innerText='Load more' /&gt;" Guid="56b3b0f3-629e-4ab6-8257-cb0b0ad3ce80" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Money20/20 USA' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="467, 881, 865, 69" ElementType="Button" FriendlyName="'Load more'" FullSelectorArgument="&lt;webctrl aaname=' Load more ' parentid='main-container' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Load more ' parentid='main-container' tag='BUTTON' type='' class='button-basic large secondary stretch-horizontal ng-star-inserted' check:innerText='Load more' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NExtractData.NextLink>
+                              <uix:NExtractData.Target>
+                                <uix:TargetAnchorable BrowserURL="https://connect.money2020.com/money2020usa2024/app/home/network/list/82807?page=6&amp;sort=name" DesignTimeRectangle="467, -124, 865, 6635" DesignTimeScaleFactor="1.5" FriendlyName="'Attendees Sort:'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;app-home&amp;gt;app-native-list-page&amp;gt;div&amp;gt;div' parentid='main-container' tag='DIV' /&gt;" Guid="22e666c6-3297-4185-9d0f-8fc5b1292a2b" InformativeScreenshot="6c20bcfacd46092bad0245e5de26e47c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Money20/20 USA' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                              </uix:NExtractData.Target>
+                            </uix:NExtractData>
+                            <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,187.33333333333334" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[ExtractDataTable]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAABGdBTUEAALGPC/xhBQAABTlJREFUeF7tnN2REzkYRfeJJQKIYCECiGAhgiUDiAAygAwmA8hgMlgymBAmg8lgqI9yV7mEPO6W7m399LlV523Ksj3H0m1Z7b/+fvb8EUANYoEFxAILiAUWEAssIBZYQCywgFhgAbHAAmKBBcQCC4gFFhALLCAWWEAssIBYYAGxwAJigQXEAguIBRYQCywgFlhALLCAWGABscACYoEFxAILiAUWEAssIBZYQCywgFhgAbHAQjOx3r55+/ju3/cycmPMQu71ruXli5fZx3TTTKwP/314VObL5y/ZcUbnx/cfp1dYlpAr97humi6FX79+O718TVq9iS4+fvx0emXlOaRYwe3t7ektqM/Dw8PvJTY3zmjE61DksGJFB7i7uzu9DfWJx2rVK1TE848PiSKHFSuIT6fqjYzELJgbZxSUH7RDixWoy3z0t9w4vVNb1tMcXqxAXeaj/ObG6RVFWU+DWCeOWuZVZT0NYp1Ql/n7+/vuy7yyrKdBrDPUZf7n/z+z4/SC8oOUBrES1GU+SnFunNaoy3oaxMowe5l3lPU0iHUBZZmP9FLm1cv9pSDWBdRlPv6Zrct8jB8XFXsEsZ5A/elu/bVPXEzsFcS6wixl/ubm5vQM9glirUBd5vc+w7VHWU+DWCtRl/m93vi9ynoaxFqJo8y7rxT3LOtpEGsDo5X5Pct6GsTaiLrMu85w7V3W0yBWAeoyrz7D1aKsp0GsQtRlXvW1T6uyngaxCumxzLcs62kQqwL17FB7hqtlWU+DWJWoy3zpGa7WZT0NYglQl/mtX/v0UNbTIJaIVmW+l7KeBrFEqMt85FqZd4ypejzEEqKePeKxnirz6lkypAohFEEsMeoyH//snFzqXrdckSJWx7jLvFre8z00xOoc9TK1nOFylPXzCwXE6hxHsY6ZSv2Ysf91/rwRawB63QpYktuMRaxBUPchVS5dFCDWQKjLfG3Oy3oKYg2GuszXJGbR3HMMEGswHGW+JNcOFSLWgLQu82u+3EasQWlV5i+V9RTEGpi9y3zMkq/+eZ19LimINTh7lvkt/2TEGpy9yvzW2/kRawLcZb7kB0gQaxJcZT5mw9x410CsiVCX+ZgF11wB5kCsyVCW+Utf16wBsSZDVeZr76hGrAmpLfOKXwtErEkpLfOlN7qmINbEbC3ztbfmn4NYk7O2zMfSWVPWUxBrctaWedXPHy0g1gG4Vuavna0qAbEOwqUyH0tl7u9rQawDkZb5tWerSkCsg7GUeXVZT0Gsg7GU+aduhFCAWGABsQzE8d24fI9OsxAH5ZxLT28glpB4E679MGzsbqv3jHoEsQREb9l6XCUEXHtjwoggViVrd7ZzcV+ZtQSxKqk9+xRyufaSWoJYFaQbjqVRHVXpCcQqJPqRMrMVesQqRDVbLYklNTfOqCBWIbXdKpeZrhIRqxBHZloOEauA2CJwJJbX3HgjglgFINZ1EKsQRxDrzxxOLEd5dx9l2RPEKiROK6gz0w48YhUSEjx1g8LWKO4+7gnEqkC5STrbSQfEqqDmZMN5ZirtC4hVSWw91CyJsy2BC4glIOSKk6FbM6tUAWKJiGVx7SnSkHCmrYUc0Rljia+lVffsRqyFmL1iJsrNYHHu6gjn3WegO7FSYiqf8YTo7HQvFowJYoEFxAILiAUWEAssIBZYQCywgFhgAbHAAmKBBcQCC4gFFhALLCAWWEAssIBYYAGxwAJigQXEAguIBRYQCywgFlhALLCAWGABscACYoEFxAILiAUWEAssIBZYQCywgFhgAbHAwPPHX8Ck29orAhPjAAAAAElFTkSuQmCC" InformativeScreenshot="a3b9672b1a3f0d99de14f2d2e93fffba.jpg" Selector="&lt;html app='msedge.exe' title='Money20/20 USA' /&gt;" Title="Money20/20 USA" Url="https://connect.money2020.com/money2020usa2024/app/home/network/list/82807?page=6&amp;sort=name" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
